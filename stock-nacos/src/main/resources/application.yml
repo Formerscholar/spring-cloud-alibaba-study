@@ -1,11 +1,11 @@
 server:
-  port: 8021
+  port: 8031
 spring:
   application:
     name: stock-service
   cloud:
     nacos:
-      server-addr: 127.0.0.1:8848
+      server-addr: 47.94.83.242:8848
       discovery:
         username: nacos
         password: nacos
