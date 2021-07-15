@@ -1,0 +1,19 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      server-addr: 47.94.83.242:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+stock-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+ribbon:
+  eager-load:
+    enabled: true
+    clients: stock-service
