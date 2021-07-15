@@ -18,3 +18,5 @@ feign:
     config:
       stock-service:
         loggerLevel: FULL
+        connectTimeout: 5000
+        readTimeout: 10000
