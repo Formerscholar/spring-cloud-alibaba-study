@@ -10,3 +10,11 @@ spring:
         username: nacos
         password: nacos
         namespace: public
+logging:
+  level:
+    com.chad.order.service: debug
+feign:
+  client:
+    config:
+      stock-service:
+        loggerLevel: FULL
