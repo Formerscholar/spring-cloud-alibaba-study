@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: com.chad.order.rides
+  cloud:
+    nacos:
+      server-addr: 47.94.83.242:8848
+      username: nacos
+      password: nacos
+      config:
+        namespace: public
+        file-extension: yaml
+        shared-configs:
+          - data-id: com.chad.order.common.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+#        extension-configs:
+#          - data-id: com.chad.order.common.yaml
+#            group: DEFAULT_GROUP
+#            refresh: true
