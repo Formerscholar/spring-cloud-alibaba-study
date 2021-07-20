@@ -11,6 +11,7 @@
         <module>order-openfeign</module>
         <module>config-nacos</module>
         <module>order-sentinel</module>
+        <module>gateway</module>
     </modules>
 
     <groupId>com.chad</groupId>
