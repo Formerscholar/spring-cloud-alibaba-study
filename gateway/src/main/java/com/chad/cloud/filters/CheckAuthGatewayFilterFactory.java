@@ -27,7 +27,7 @@ public class CheckAuthGatewayFilterFactory extends AbstractGatewayFilterFactory<
 			public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 				String name = exchange.getRequest().getQueryParams().getFirst("name");
 				if (StringUtils.isNotBlank(name)) {
-					System.out.println(config.getName());
+					System.out.println(config.name);
 					if (config.getName().equals(name)) {
 						System.out.println("if");
 						return chain.filter(exchange);

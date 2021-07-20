@@ -15,7 +15,7 @@ spring:
             - Path=/order/**
           #          - CheckAuth=chad
           filters:
-    #            - CheckAuth=chad
+#            - CheckAuth=name,chad
     #          - StripPrefix=1
 
     nacos:
