@@ -9,13 +9,15 @@ spring:
       #        locator:
       #          enabled: true
       routes:
-      - id: order-route
-        uri: lb://order-service
-        predicates:
-          - Path=/order/**
-          - CheckAuth=chad
-#        filters:
-#          - StripPrefix=1
+        - id: order-route
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+          #          - CheckAuth=chad
+          filters:
+    #            - CheckAuth=chad
+    #          - StripPrefix=1
+
     nacos:
       discovery:
         server-addr: 47.94.83.242:8848
